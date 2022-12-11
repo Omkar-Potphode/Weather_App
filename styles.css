@@ -1,0 +1,187 @@
+:root{
+    --accent-color: #f4717f;
+    --black: #262125;
+    --white: #fff;
+    --shadow: 3px 5px 15px -5px #f4717f;
+    --shadow-text: 1px 2px 10px #f4717eb1;
+    --img-match: rgba(254, 109, 12, 0.955);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #e1eef2;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.app{
+    width: 35rem;
+    height: 65rem;
+    border: 4px solid rgb(255,255,255);
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 4px 4px 20px -5px #00000055;
+    background-image: url("bg.jpg");
+}
+
+header{
+    width: 100%;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+    background-color: var(--white);
+    box-shadow: 4px 4px 30px -10px #00000055;
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+}
+
+.navbar .logo{
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    text-shadow: var(--shadow-text);
+}
+
+.menuToggler{
+    background-color: var(--accent-color);
+    border: 2px solid var(--white);
+    padding: .4rem .6rem;
+    display: grid;
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+}
+
+.locationBox{
+    font-size: 1.6rem;
+    background-color: var(--accent-color);
+    padding: .3rem 1rem;
+    border-radius: 5px;
+    color: var(--white);
+    cursor: pointer;
+    box-shadow: var(--shadow);
+}
+
+.dateData{
+    position: absolute;
+    top: 24%;
+    left: 41.5%;
+}
+
+.date{
+    font-size: 16px;
+    color: var(--img-match);
+    font-weight: 750;
+}
+
+.weatherHero{
+    width: 100%;
+}
+
+
+
+.weatherInfo{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    margin-top: 320px;
+    opacity: 0.87;
+}
+
+.infoBox{
+    background-color: var(--white);
+    padding: 1rem;
+    box-shadow: 4px 4px 30px -15px #00000055;
+    border-radius: 10px;
+}
+
+.infoText{
+    color: var(--accent-color);
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+
+.valueBox{
+    color: var(--black);
+    font-size: 1.6rem;
+}
+
+.BigTemperature{
+    position: absolute;
+    font-size: 6.7rem;
+    color: var(--img-match);
+    top: 30%;
+    right: 50%;
+}
+
+.BigDescription{
+    position: absolute;
+    font-size: 4rem;
+    color: var(--img-match);
+    bottom: 48%;
+    right: 42%;
+}
+
+.locationInput{
+    width: 80%;
+    display: flex;
+    height: 2.8rem;
+    background-color: var(--white);
+    border-radius: 5px;
+    overflow: hidden;
+    border: 2px solid var(--white);
+    align-items: center;
+    position: absolute;
+    top: 120%;
+    box-shadow: 4px 4px 30px -10px #00000055;
+    display: none;
+}
+
+.locationInput.active{
+    display: flex;
+}
+
+.locationInput button{
+    width: 3rem;
+    height: 100%;
+    background-color: var(--accent-color);
+    border: none;
+    outline: none;
+    color: var(--white);
+    display: grid;
+    place-items: center;
+    z-index: 100;
+}
+
+.locationInput #locationInput{
+    flex: 1;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding-left: 1rem;
+}
+
+.locationInput #locationInput::placeholder{
+    color: var(--accent-color);
+}

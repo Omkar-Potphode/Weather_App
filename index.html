@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <!--CSS File link-->
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"/>
+    </head>
+
+    <body>
+        <div class="app">
+            <header>
+                <nav class="navbar">
+                    <div class="logo"><i class="ri-sun-cloudy-fill"></i></div>
+                    <div class="locationBox">
+                        <i class="ri-map-pin-2-line"></i><span class="cityname">City Name</span>
+                    </div>
+                    <button class="menuToggler"><i class="ri-more-2-fill"></i></button>
+                </nav>
+                <div class="locationInput">
+                    <input type="text" name="location" id="locationInput" placeholder="Search Location"/>
+                </div>
+            </header>
+
+            <main>
+                <section class="dateData">
+                    <p class="date">Day DD Month YYYY</p>
+                </section>
+                <section class="weatherBig">
+                    <h2 class="BigTemperature">0°</h2>
+                    <div class="BigDescription">Haze</div>
+                </section>
+                <section class="weatherInfo">
+                    <div class="infoBox">
+                        <h5 class="infoText">Temperature</h5>
+                        <p class="valueBox temperature">Value</p>
+                    </div>
+                    <div class="infoBox">
+                        <h5 class="infoText">Wind</h5>
+                        <p class="valueBox wind">Value</p>
+                    </div>
+                    <div class="infoBox">
+                        <h5 class="infoText">Humidity</h5>
+                        <p class="valueBox humidity">Value</p>
+                    </div>
+                    <div class="infoBox">
+                        <h5 class="infoText">Pressure</h5>
+                        <p class="valueBox pressure">Value</p>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!--JavaScript File link-->
+        <script src="weather.js"></script>
+    </body>
+</html> 
